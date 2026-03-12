@@ -3,7 +3,7 @@
 # High-Availability & Scalable Web Infrastructure on AWS ☁️
 
 ## 📝 Project Overview
-This project demonstrates the design and implementation of a resilient, highly available, and secure multi-tier architecture on **Amazon Web Services (AWS)**. The infrastructure is engineered to handle production-grade traffic by distributing workloads across multiple **Availability Zones (AZs)**, ensuring zero downtime and data integrity.
+This project demonstrates the design and implementation of a resilient, highly available, and secure multi-tier architecture on **Amazon Web Services (AWS)**. The infrastructure is designed for web pplication hosting handling traffic by distributing workloads across multiple **Availability Zones (AZs)**.
 
 ## 🏗️ Architecture Design 
 
@@ -16,15 +16,15 @@ This project demonstrates the design and implementation of a resilient, highly a
 * **Internet Gateway (IGW):** Acts as the bridge between the VPC and the public internet.
 
 ### 2. Compute & Traffic Management
-* **Application Load Balancer (ALB):** Distributes incoming HTTP/HTTPS traffic across multiple EC2 instances to optimize performance and availability.
-* **Auto Scaling Group (ASG):** Automatically adjusts the number of EC2 instances based on demand, ensuring the application stays responsive during traffic spikes.
+* **Application Load Balancer (ALB):** Distributes incoming traffic across multiple EC2 instances to optimize performance and availability.
+* **Auto Scaling Group (ASG):** Automatically adjusts the number of EC2 instances based on demand, ensuring the application stays available during traffic spikes.
 
 ### 3. Database Layer (Persistence)
 * **Amazon RDS (Multi-AZ):** Implements a **Primary** database instance with a **Standby (Secondary)** instance in a different AZ for synchronous replication and automatic failover.
 
 ### 4. Security & Traffic Control
-* **Security Groups:** Layered virtual firewalls for the ALB, Web, and Database tiers to enforce the principle of least privilege.
-* **NAT Gateway:** Provides instances in private subnets with internet access for updates while blocking unsolicited inbound traffic.
+* **Security Groups:** Layered virtual firewalls for the ALB, Web, and Database tiers.
+* **NAT Gateway:** Provides instances in private subnets with internet access for updates while blocking inbound traffic.
 
 ## 🛠️ AWS Services Stack
 * **Compute:** EC2, Auto Scaling.
