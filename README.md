@@ -26,10 +26,9 @@ This project demonstrates the design and implementation of a resilient, highly a
 * **Security Groups:** Layered virtual firewalls for the ALB, Web, and Database tiers.
 * **NAT Gateway:** Provides instances in private subnets with internet access for updates while blocking inbound traffic.
 
-## 🛠️ AWS Services Stack
+## ☁️ AWS Services 
 * **Compute:** EC2, Auto Scaling.
 * **Networking:** VPC, ALB, Internet Gateway, NAT Gateway.
 * **Database:** Amazon RDS (Relational Database Service).
 
 ---
-*Developed by Hanaa Abd El-reheem - Cloud & DevOps Engineer*
